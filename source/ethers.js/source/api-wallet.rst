@@ -202,13 +202,13 @@ Signing
     let transaction = {
         nonce: 0,
         gasLimit: 21000,
-        gasPrice: utils.bigNumberify("20000000000"),
+        gasPrice: ethers.utils.bigNumberify("20000000000"),
 
         to: "0x88a5C2d9919e46F883EB62F7b8Dd9d0CC45bc290",
         // ... or supports ENS names
         // to: "ricmoo.firefly.eth",
 
-        value: utils.parseEther("1.0"),
+        value: ethers.utils.parseEther("1.0"),
         data: "0x",
 
         // This ensures the transaction cannot be replayed on different networks
